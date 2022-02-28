@@ -1,0 +1,30 @@
+create database pizzachef;
+use pizzachef;
+
+create table iteminfo ( itemname varchar(40), specification varchar(140), price int(5) );
+
+insert into iteminfo values('Marggherita','Simple Cheese Topping', 149);
+insert into iteminfo values('Chef Veg Wonder' ,'Mushroom  Jalepeno  Babycorn  Crisp Capsicum  Paneer  Red Paprika', 199);
+insert into iteminfo values('Farmhouse','Onion  Crisp Capsicum  Mushroom  Fresh Tomato',249);
+insert into iteminfo values('Mexican Green Wave' ,'Onion  Crisp Capsicum  Fresh Tomato  Jalapeno sprinkled ', 299);
+insert into iteminfo values('Veg Extravaganza','Black Olives  Onion  Golden Corn  Jalapeno  Extra Cheese',349);
+insert into iteminfo values('Chicken Dominator' , 'Double Barbeque Hot n Spicy Chicken  Italian sausage', 199);
+insert into iteminfo values('Chicken Golden Delight' , 'Golden Corn  double Barbeque Chicken  Extra Cheese', 249);
+insert into iteminfo values('Chefs Chicken Choice' , 'chicken rashers  Black Olives  Crisp Capsicum  Red Paprika', 299);
+insert into iteminfo values('Chicken Mexicana' , 'Onion Tomato HotnSpicy Chicken sprinkled with exotic Mexican Herbs', 349);
+insert into iteminfo values('Non Veg Supreme' , 'Black Olives Crisp Capsicum  Mushroom HotnSpicy Chunky Chicken', 399);
+insert into iteminfo values('Sprite','Soft drink', 53);
+insert into iteminfo values('Appy Fizz','Soft drink', 59);
+insert into iteminfo values('Miranda','Soft drink', 55);
+insert into iteminfo values('Coco Cola','Soft drink', 57);
+insert into iteminfo values('Pepsi','Soft drink', 52);
+insert into iteminfo values('Choco Truffle Cake','cake', 94);
+insert into iteminfo values('Choco Volcano Cake','cake', 97);
+insert into iteminfo values('Choca Lava Cake','cake', 92);
+insert into iteminfo values('Raspberry Pie','cake', 95);
+insert into iteminfo values('Espresso Crinkles','cake', 99);
+
+
+
+create table bill (Billno int(5), BillDate date, Name varchar(30), itemname varchar(50), price double(7,2), Quantity int(2), Amount double(7,2));
+
